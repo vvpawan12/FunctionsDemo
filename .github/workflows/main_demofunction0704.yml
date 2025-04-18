@@ -69,5 +69,6 @@ jobs:
         with:
           app-name: 'demofunction0704'
           slot-name: 'Production'
-          package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          #package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+          package: release.zip
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_89FDFCE9D7EF4D2EA8940842A448BAC3 }}
